@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_notificacoes"
+        android:title="@string/menu_notificacoes"
+        android:icon="@drawable/ic_notifications" />
+
+    <item
+        android:id="@+id/menu_duelos"
+        android:icon="@drawable/ic_fire"
+        android:title="@string/menu_duelos"/>
+
+    <item
+        android:id="@+id/menu_forum"
+        android:title="@string/menu_forum"
+        android:icon="@drawable/ic_forum"
+        />
+
+    <item
+        android:id="@+id/menu_aulas"
+        android:title="@string/menu_aulas"
+        android:icon="@drawable/ic_aulas" />
+
+    <item
+        android:id="@+id/menu_perfil"
+        android:title="@string/menu_perfil"
+        android:icon="@drawable/ic_person" />
+
+</menu>

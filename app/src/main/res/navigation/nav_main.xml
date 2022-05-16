@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/menu_notificacoes">
+
+    <fragment
+        android:id="@+id/menu_notificacoes"
+        android:name="com.example.maujorapp.fragments.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/menu_duelos"
+        android:name="com.example.maujorapp.fragments.FigthFragment"
+        android:label="fragment_figth"
+        tools:layout="@layout/fragment_figth" />
+    <fragment
+        android:id="@+id/menu_forum"
+        android:name="com.example.maujorapp.fragments.ForumFragment"
+        android:label="fragment_forum"
+        tools:layout="@layout/fragment_forum" />
+    <fragment
+        android:id="@+id/menu_aulas"
+        android:name="com.example.maujorapp.fragments.ClassFragment"
+        android:label="fragment_class"
+        tools:layout="@layout/fragment_class" />
+    <fragment
+        android:id="@+id/menu_perfil"
+        android:name="com.example.maujorapp.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MaujorApp</string>
+
+    <string name="menu_notificacoes">Notificações</string>
+    <string name="menu_duelos">Duelos</string>
+    <string name="menu_forum">Fórum</string>
+    <string name="menu_aulas">Aulas</string>
+    <string name="menu_biblioteca">Biblioteca</string>
+    <string name="menu_perfil">Perfil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

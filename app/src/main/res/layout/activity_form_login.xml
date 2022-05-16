@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormLogin"
+    android:background="#F0F8FF">
+
+    <ImageView
+        android:id="@+id/logoIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:id="@+id/textNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome Completo:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/logoIcon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="34dp"
+        android:layout_marginStart="64dp" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="280dp"
+        android:layout_height="29dp"
+        android:background="@drawable/borda"
+        android:ems="10"
+        android:hint="Joao Maujor Silva"
+        app:layout_constraintTop_toBottomOf="@id/textNome"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data de Nascimento:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/editName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/editData"
+        android:layout_width="280dp"
+        android:layout_height="28dp"
+        android:background="@drawable/borda"
+        android:ems="10"
+        android:hint="Ex: 06/08/1999"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@id/textData"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp" />
+
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/editData"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="64dp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="280dp"
+        android:layout_height="27dp"
+        android:background="@drawable/borda"
+        android:ems="10"
+        android:hint="Ex: joao@maujor.com.br"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/textEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/textSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/editEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="64dp"/>
+
+
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_width="277dp"
+        android:layout_height="27dp"
+        android:background="@drawable/borda"
+        android:ems="10"
+        android:hint="********"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/textSenha"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp" />
+
+
+    <TextView
+        android:id="@+id/textSenhaConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="24dp"
+        android:text="Confirmação de Senha:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editSenha" />
+
+    <EditText
+        android:id="@+id/editSenha2"
+        android:layout_width="277dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/borda"
+        android:ems="10"
+        android:hint="********"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editSenha" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="169dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="104dp"
+        android:backgroundTint="#274C77"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editSenha2"
+        app:layout_constraintVertical_bias="0.428" />
+</androidx.constraintlayout.widget.ConstraintLayout>
