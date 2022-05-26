@@ -1,8 +1,12 @@
 package com.example.maujorapp.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,6 +17,7 @@ import android.widget.Toast;
 import com.example.maujorapp.databinding.FragmentFigthBinding;
 import com.example.maujorapp.model.domain.Users;
 import com.example.maujorapp.model.domain.UsersAPI;
+import com.example.maujorapp.view.UsersAdapter;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
@@ -28,6 +33,7 @@ public class FigthFragment extends Fragment {
 
     FragmentFigthBinding binding;
     private UsersAPI usersAPI;
+    RecyclerView.Adapter userAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,6 +48,7 @@ public class FigthFragment extends Fragment {
         return binding.getRoot();
     }
 
+
     private void initRetrofit() {
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -53,12 +60,15 @@ public class FigthFragment extends Fragment {
     }
 
     private void setupListUsers() {
+        binding.rvRanking.setHasFixedSize(true);
+        binding.rvRanking.setLayoutManager(new LinearLayoutManager(getContext()));
         usersAPI.getData().enqueue(new Callback<List<Users>>() {
             @Override
             public void onResponse(Call<List<Users>> call, Response<List<Users>> response) {
                 if(response.isSuccessful()){
                     List<Users> users = response.body();
-                    Log.i("Deu certo!", "Deu certo " + users.size());
+                    userAdapter = new UsersAdapter(users);
+                    binding.rvRanking.setAdapter(userAdapter);
                 } else {
                     Snackbar.make(binding.getRoot(), "Erro de conexão!", Snackbar.LENGTH_LONG).show();
                 }

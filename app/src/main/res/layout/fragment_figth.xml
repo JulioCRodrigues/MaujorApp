@@ -19,32 +19,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/btnArrowBack"
-        android:layout_width="23dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/ic_arrow_back"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/tvRanking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/roboto_medium"
         android:text="Top 10"
-        android:textSize="15dp"
         android:textAllCaps="true"
         android:textColor="#000000"
+        android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageCrown" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRanking"
         android:layout_width="413dp"
         android:layout_height="455dp"
         app:layout_constraintBottom_toBottomOf="parent"
