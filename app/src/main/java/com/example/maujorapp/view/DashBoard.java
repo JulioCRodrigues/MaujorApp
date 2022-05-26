@@ -1,4 +1,4 @@
-package com.example.maujorapp;
+package com.example.maujorapp.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -8,6 +8,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.maujorapp.model.DashboardAdapter;
+import com.example.maujorapp.model.DashboardComponents;
+import com.example.maujorapp.R;
 import com.example.maujorapp.databinding.ActivityDashBoardBinding;
 import com.google.android.material.badge.BadgeDrawable;
 

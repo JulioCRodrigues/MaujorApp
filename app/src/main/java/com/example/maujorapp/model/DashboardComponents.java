@@ -1,4 +1,4 @@
-package com.example.maujorapp;
+package com.example.maujorapp.model;
 
 public class DashboardComponents {
 

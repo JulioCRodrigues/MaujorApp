@@ -1,4 +1,4 @@
-package com.example.maujorapp;
+package com.example.maujorapp.model;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.maujorapp.R;
 
 import java.util.List;
 

@@ -1,8 +1,10 @@
-package com.example.maujorapp;
+package com.example.maujorapp.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.maujorapp.R;
 
 public class FormLogin extends AppCompatActivity {
 
